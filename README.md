@@ -1,6 +1,6 @@
 # Git 101
 
-Git is a distributed version-control system, created by [Linus Tolvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) in 2005. Git is practical, simplified, fast, efficient, and free and open source. 
+[Git](https://git-scm.com/) is a distributed version-control system, created by [Linus Tolvalds](https://en.wikipedia.org/wiki/Linus_Torvalds) in 2005. Git is practical, simplified, fast, efficient, and free and open source. 
 
 ## First commands
 
@@ -13,6 +13,16 @@ Git is a distributed version-control system, created by [Linus Tolvalds](https:/
 | Log      	| `git log`                                            	| View latest commits in repository               	|
 | Settings 	| `git config --global user.email "you@example.com ”` 	| Set up your email (only the first time)            	|
 |          	| `git config --global user.name “Your Name”`          	| Set up your name (only the first time)              	|
+
+
+## Create a remote repository
+
+| Name   	| Command                        	| Description                                	|
+|--------	|--------------------------------	|--------------------------------------------	|
+| Remote 	| `git remote -v`                	| Configure the server                       	|
+|        	| `git remote add <remote><url>` 	| Add another remote server                  	|
+| Push   	| `git push -u origin master`    	| Sync with remote repository the first time 	|
+|        	| `git push`                     	| Sync with remote repository                	|
 
 ---
 

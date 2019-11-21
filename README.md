@@ -14,6 +14,18 @@
 | Settings 	| `git config --global user.email "you@example.com ”` 	| Set up your email (only the first time)            	|
 |          	| `git config --global user.name “Your Name”`          	| Set up your name (only the first time)              	|
 
+#### File status
+
+* Untracked 
+* Modified 
+* Staged 
+* Committed
+
+#### Workflow 
+
+* :scissors: **Edit**,
+* :memo: **Commit**, and 
+* :arrows\_clockwise: **Sync** with remote repository
 
 ## Create a remote repository
 
@@ -24,15 +36,18 @@
 | Push   	| `git push -u origin master`    	| Sync with remote repository the first time 	|
 |        	| `git push`                     	| Sync with remote repository                	|
 
-## File status
 
-| Name        	| Command           	| Description                                               	|
-|-------------	|-------------------	|-----------------------------------------------------------	|
-| Workflow    	|                   	| **Edit**, **Commit**, and **Sync** with remote repository 	|
-| File Status 	|                   	| Untracked / Modified / Staged / Committed               	|
+## History and conflicts
+
+| Name     	| Command                       	| Description                                                 	|
+|----------	|-------------------------------	|-------------------------------------------------------------	|
+| Clone    	| `git clone <url>`             	| Download remote repository                                  	|
+| Pull     	| `git pull`                    	| Keep repository synchronized with last branch commits       	|
+| Checkout 	| `git checkout <commit><file>` 	| Shows how a file or entire repository was in a given commit 	|
+|          	| `git checkout <commit>`       	| Changes the repository to that commit state                 	|
+|          	| `git checkout master`         	| To return the repository at last commit                     	|
 | Diff        	| `git diff [path]` 	| Display differences between commits and branchs           	|
 |             	| `git diff HEAD~1` 	| Shows what was changed in the last commit                 	|
-
 
 
 

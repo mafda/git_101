@@ -35,20 +35,24 @@
 |        	| `git remote add <remote><url>` 	| Add another remote server                  	|
 | Push   	| `git push -u origin master`    	| Sync with remote repository the first time 	|
 |        	| `git push`                     	| Sync with remote repository                	|
+| Clone    	| `git clone <url>`             	| Download remote repository                                  	|
+| Pull     	| `git pull`                    	| Keep repository synchronized with last branch commits       	|
 
 
 ## History and conflicts
 
 | Name     	| Command                       	| Description                                                 	|
 |----------	|-------------------------------	|-------------------------------------------------------------	|
-| Clone    	| `git clone <url>`             	| Download remote repository                                  	|
-| Pull     	| `git pull`                    	| Keep repository synchronized with last branch commits       	|
+| Diff        	| `git diff [path]` 	| Display differences between commits and branchs           	|
+|             	| `git diff HEAD~1` 	| Shows what was changed in the last commit                 	|
 | Checkout 	| `git checkout <commit><file>` 	| Shows how a file or entire repository was in a given commit 	|
 |          	| `git checkout <commit>`       	| Changes the repository to that commit state                 	|
 |          	| `git checkout master`         	| To return the repository at last commit                     	|
-| Diff        	| `git diff [path]` 	| Display differences between commits and branchs           	|
-|             	| `git diff HEAD~1` 	| Shows what was changed in the last commit                 	|
-
+|        	| `git checkout -- <path_or_file>`   	| Undo all non-stage changes since the last commit                   	|
+|        	| `git checkout HEAD -- <path_file>` 	| Undo changes since last commit including stage                     	|
+| Revert 	| `git revert <commit>`              	| Creates a new commit that undoes changes to the specified commit   	|
+| Reset  	| `git reset <commit>`               	| Reset repository for a given commit                                	|
+|        	| `git reset --hard <commit>`        	| Resets and removes all changes :exclamation: Be careful when using 	|
 
 
 ---

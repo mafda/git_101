@@ -24,6 +24,18 @@
 | Push   	| `git push -u origin master`    	| Sync with remote repository the first time 	|
 |        	| `git push`                     	| Sync with remote repository                	|
 
+## File status
+
+| Name        	| Command           	| Description                                               	|
+|-------------	|-------------------	|-----------------------------------------------------------	|
+| Workflow    	|                   	| **Edit**, **Commit**, and **Sync** with remote repository 	|
+| File Status 	|                   	| Untracked / Modified / Staged / Committed               	|
+| Diff        	| `git diff [path]` 	| Display differences between commits and branchs           	|
+|             	| `git diff HEAD~1` 	| Shows what was changed in the last commit                 	|
+
+
+
+
 ---
 
 ## References

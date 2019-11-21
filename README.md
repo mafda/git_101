@@ -16,10 +16,10 @@
 
 #### File status
 
-* Untracked 
-* Modified 
-* Staged 
-* Committed
+* :x: Untracked 
+* :new: Modified 
+* :ok: Staged 
+* :heavy\_check\_mark: Committed
 
 #### Workflow 
 

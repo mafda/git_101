@@ -67,6 +67,18 @@
 | Fetch  	| `git fetch`               	| pull = fetch + merge. Download remote updates but do not apply them to the repository. Lets you rebase a branch instead of merge. Fetch and rebase is best for keeping track of development.                                                                                                            	|
 | Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                                                                                                                                                                                                                                                      	|
 
+## Other commands
+
+| Name        	| Command                   	| Description                                                                                                                                                                      	|
+|-------------	|---------------------------	|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Amend       	| `git commit --amend`      	| Changes the last commit                                                                                                                                                          	|
+| Stash       	| `git stash`               	| Save Working Directory Changes. Allows you to rebase, merge, switch branches without the need to commit.                                                                         	|
+|             	| `git stash list`          	| Applies the last stored stash.                                                                                                                                                   	|
+|             	| `git stash pop`           	|                                                                                                                                                                                  	|
+| Cherry Pick 	| `git cherrypick <commit>` 	| Applies commit changes to the current branch. Create a new commit. Useful to retrieve history                                                                                    	|
+| Blame       	| `git blame`               	| Shows changes made to one file per line. Show author and commit that line was made. Useful to check when changes were made, why, and by whom                                     	|
+| Bisect      	| `git bisect`              	| Lets you do a binary search in commits to find a change. Useful for changes that have changed behavior and cannot be easily identified by code. When the change may be quite old 	|
+
 
 ---
 

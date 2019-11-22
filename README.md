@@ -54,6 +54,19 @@
 | Reset  	| `git reset <commit>`               	| Reset repository for a given commit                                	|
 |        	| `git reset --hard <commit>`        	| Resets and removes all changes :exclamation: Be careful when using 	|
 
+## Branch, Merge and Rebase
+
+| Name   	| Command                   	| Description                                                                                                                                                                                                                                                                                             	|
+|--------	|---------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Branch 	|                           	| Branch master is the default. Development branch make it easy to control                                                                                                                                                                                                                                	|
+|        	| `git branch <new_branch>` 	| Create a new branch                                                                                                                                                                                                                                                                                     	|
+|        	| `git branch -d <branch>`  	| Delete a branch                                                                                                                                                                                                                                                                                         	|
+|        	| `git checkout <branch>`   	| Switch to the branch                                                                                                                                                                                                                                                                                    	|
+| Merge  	| `git merge <branch>`      	| Commit a branch to the current branch. Finds a common commit (base) between branches and applies all commits that the current branch doesn't have. If there are commits in the current branch that is not in the other branch, a merge commit will be created.                                          	|
+| Rebase 	| `git rebase <branch>`     	| Similar to Merge but different in the order of committing. In Rebase, your commits in front of the base are temporarily removed, commits from another branch are applied to your branch, and finally your commits are applied one by one. There may be conflicts that will be resolved for each commit. 	|
+| Fetch  	| `git fetch`               	| pull = fetch + merge. Download remote updates but do not apply them to the repository. Lets you rebase a branch instead of merge. Fetch and rebase is best for keeping track of development.                                                                                                            	|
+| Tag    	| `git tag [name_tag]`      	| Useful for defining stable versions of the project                                                                                                                                                                                                                                                      	|
+
 
 ---
 

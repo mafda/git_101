@@ -43,7 +43,7 @@
 
 | Name     	| Command                       	| Description                                                 	|
 |----------	|-------------------------------	|-------------------------------------------------------------	|
-| Diff        	| `git diff [path]` 	| Display differences between commits and branchs           	|
+| Diff        	| `git diff [path]` 	| Display differences between commits and branches           	|
 |             	| `git diff HEAD~1` 	| Shows what was changed in the last commit                 	|
 | Checkout 	| `git checkout <commit><file>` 	| Shows how a file or entire repository was in a given commit 	|
 |          	| `git checkout <commit>`       	| Changes the repository to that commit state                 	|
